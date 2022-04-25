@@ -2,6 +2,7 @@ package com.squareshift.ecommerce.service;
 
 import com.squareshift.ecommerce.dto.CartAddItemResponseDto;
 import com.squareshift.ecommerce.dto.CartItemResponseDto;
+import com.squareshift.ecommerce.dto.CommonResponseDto;
 import com.squareshift.ecommerce.dto.ItemDto;
 
 public interface CartService {
@@ -11,4 +12,6 @@ public interface CartService {
     public CartAddItemResponseDto addItemToCart(ItemDto itemAddToCart);
 
     public void deleteCartItems();
+
+    public CommonResponseDto getCartValue(Long postalCode);
 }

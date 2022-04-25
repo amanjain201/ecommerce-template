@@ -6,8 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class CartItemResponseDto {
-    private String status;
-    private String message;
+public class CartItemResponseDto extends CommonResponseDto{
     private List<ItemDto> items = new ArrayList<ItemDto>();
 }
